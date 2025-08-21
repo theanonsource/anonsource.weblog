@@ -159,6 +159,11 @@
     // Отображаем темы при загрузке страницы
     displayTopics();
 
+    // Отображаем темы при фокусе на поле ввода
+    searchInput.addEventListener('focus', function() {
+        displayTopics(); // Показываем все темы при фокусе
+    });
+
     searchInput.addEventListener('input', function() {
         const query = this.value.toLowerCase();
         if (query) {
