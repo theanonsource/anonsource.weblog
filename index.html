@@ -92,33 +92,47 @@
             max-width: 800px; /* Максимальная ширина для лучшего восприятия */
             text-align: left; /* Выравнивание текста по левому краю */
        }
-     #search-container {
-            margin: 20px;
-            position: relative;
-        }
-        #search-input {
-            padding: 10px;
-            width: 300px;
-            border: 1px solid #444; /* Темная граница */
-            background-color: #333; /* Темный фон для поля ввода */
-            color: #e0e0e0; /* Светлый цвет текста в поле ввода */
-        }
-        #suggestions {
-            border: 1px solid #ccc;
-            max-height: 150px;
-            overflow-y: auto;
-            position: absolute;
-            width: 300px;
-            z-index: 1000;
-            background: white;
-        }
-        .suggestion {
-            padding: 10px;
-            cursor: pointer;
-        }
-        .suggestion:hover {
-            background-color: #f0f0f0;
-        }
+    #search-container {
+    margin: 20px;
+    position: relative;
+}
+#search-input {
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #444; /* Темная граница */
+    background-color: #222; /* темный фон для поля ввода */
+    color: #e0e0e0; /* Светлый цвет текста в поле ввода */
+    border-radius: 5px; /* Закругленные углы */
+    transition: border-color 0.3s; /* Плавный переход для границы */
+}
+
+#search-input:focus {
+    border-color: #007BFF; /* Цвет границы при фокусе */
+    outline: none; /* Убираем стандартный контур */
+}
+
+#suggestions {
+    border: 1px solid #444; /* Темная граница */
+    max-height: 150px;
+    overflow-y: auto;
+    position: absolute;
+    width: 300px;
+    z-index: 1000;
+    background: #333; /* Темный фон для списка предложений */
+    border-radius: 5px; /* Закругленные углы */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Тень для глубины */
+}
+
+.suggestion {
+    padding: 10px;
+    cursor: pointer;
+    color: #e0e0e0; /* Светлый цвет текста */
+    transition: background-color 0.3s; /* Плавный переход для фона */
+}
+
+.suggestion:hover {
+    background-color: #444; /* Темный фон при наведении */
+}
     </style>
 </head>
 
