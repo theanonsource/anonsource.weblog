@@ -79,21 +79,18 @@
         .social-icons a:hover {
             transform: scale(1.2); /* Увеличение иконок при наведении */
         }
-        .big-button {
-    display: inline-block; /* Позволяет задать размеры и отступы */
-    padding: 15px 30px; /* Внутренние отступы (сверху/снизу и слева/справа) */
-    font-size: 18px; /* Размер шрифта */
-    color: white; /* Цвет текста */
-    background-color: #007BFF; /* Цвет фона кнопки */
-    border: none; /* Убираем рамку */
-    border-radius: 5px; /* Закругленные углы */
-    text-decoration: none; /* Убираем подчеркивание */
-    text-align: center; /* Выравнивание текста по центру */
-    transition: background-color 0.3s; /* Плавный переход цвета фона */
-    }
-    .big-button:hover {
-    background-color: #0056b3; /* Цвет фона при наведении */
-    }
+        }
+      article {
+    border: 3px solid #333; /* темный цвет и толщина границы */
+    border-radius: 5px; /* закругленные углы */
+    padding: 20px; /* внутренние отступы */
+    margin: 20px auto; /* Внешние отступы и центрирование */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* выраженная тень */
+    background-color: #2c2c2c; /* Темный цвет фона */
+    color: #ffffff; /* Белый цвет текста для контраста */
+    max-width: 800px; /* Максимальная ширина для лучшего восприятия */
+    text-align: left; /* Выравнивание текста по левому краю */
+       }
      #search-container {
             margin: 20px;
             position: relative;
@@ -130,6 +127,15 @@
     <div id="suggestions"></div>
 </div>
 
+<article>
+        <h2><a href="logs/log1.html">Обобщаем про MAX</a></h2>
+        <p>.....</p>
+</article>
+<article>
+        <h2><a href="logs/log2.html">Кладезь полезных программ на Android</a></h2>
+        <p>.....</p>
+</article>
+    
 <script>
     const topics = {
         "Обобщаем про MAX": "logs/log1.html",
